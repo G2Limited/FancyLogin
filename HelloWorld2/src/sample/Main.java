@@ -29,7 +29,7 @@ public class Main extends Application {
     grid.setVgap(10);
     grid.setPadding(new Insets(25, 25, 25, 25));
     Text scenetitle = new Text("Welcome");
-    scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
+    scenetitle.setId("welcome-text");
     grid.add(scenetitle, 0, 0, 2, 1);
 
     Label userName = new Label("User Name:");
@@ -58,8 +58,8 @@ public class Main extends Application {
 
       @Override
       public void handle(ActionEvent e) {
-        scenetitle.setId("welcome-text");
         actiontarget.setId("actiontarget");
+        actiontarget.setText("Sign in button pressed");
       }
     });
 
@@ -75,6 +75,7 @@ public class Main extends Application {
     launch(args);
   }
 }
+
 
 
 
