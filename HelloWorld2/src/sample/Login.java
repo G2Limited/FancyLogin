@@ -1,4 +1,4 @@
-package sample;
+package login;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -12,13 +12,10 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+public class Login extends Application {
 
   @Override
   public void start(Stage primaryStage) {
@@ -66,7 +63,7 @@ public class Main extends Application {
     Scene scene = new Scene(grid, 300, 275);
     primaryStage.setScene(scene);
     scene.getStylesheets().add
-        (Main.class.getResource("Login.css").toExternalForm());
+        (Login.class.getResource("Login.css").toExternalForm());
     primaryStage.show();
   }
 
@@ -75,7 +72,6 @@ public class Main extends Application {
     launch(args);
   }
 }
-
 
 
 
